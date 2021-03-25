@@ -8,6 +8,7 @@
 <% @spots.each do |spot|%>
 <li>
 <%= spot.name %>, <%= spot.description %> and rating = <%= spot.rating %>!
+<%= link_to "view", spot_path(spot), class: "btn btn-success"%>
 </li>
 <%end%>
 </ul>
