@@ -1,5 +1,13 @@
-<h1> Our root path! </h1>
+<%= Date.today%>
+<h1>🇵🇹 Welcome to Lisbon! </h1>
 
+<h2>Find out the best spots in Lisbon💚</h2>
+<h4> We currently have <%= @spots.count%> spots to show you!</h4>
+
+<ul>
 <% @spots.each do |spot|%>
+<li>
 <%= spot.name %>, <%= spot.description %> and rating = <%= spot.rating %>!
+</li>
 <%end%>
+</ul>
