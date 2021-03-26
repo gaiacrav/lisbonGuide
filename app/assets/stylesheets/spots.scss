@@ -27,8 +27,33 @@
   margin-top: 50px;
 }
 
+.btn-delete{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 50px;
+}
+
+.btn-back{
+  margin-top: 20px;
+}
+
+.btn-back:hover{
+  cursor: pointer;
+}
+
 #date{
   font-weight: lighter;
   color: #FB6376;
   font-family: 'Pacifico', cursive;
+}
+
+.new-spot-form{
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 500px;
+}
+
+.new-spot-form-input{
+  margin: 0 auto;
+  margin-top: 50px;
 }

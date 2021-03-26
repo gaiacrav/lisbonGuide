@@ -1,5 +1,13 @@
-<h1><%= @spot.name%></h1>
-<h4>Good choice 😏 </h4>
+<div class="page">
+  <div class="header">
+    <h1><%= @spot.name%></h1>
+    <h4>Good choice 😏 </h4>
+  </div>
 
-<%= link_to "Delete", spot_path(@spot), class: "btn btn-outline-warning px-2 py-1", method: :delete, data: { confirm: 'Are you sure?' } %>
-<%= link_to "Back", spots_path, class: "btn btn-success"%>
+  <div class="btn-delete">
+    <%= link_to "Delete", spot_path(@spot), class: "btn btn-warning", method: :delete, data: { confirm: 'Are you sure?' } %>
+  </div>
+  <div class="btn-back">
+    <%= link_to "Back", spots_path, class: "btn btn-success"%>
+  </div>
+</div>
