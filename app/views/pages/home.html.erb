@@ -1,0 +1,24 @@
+<div class="page">
+  <p id="date"> <%= Date.today%> </p>
+  <div class="header">
+    <h1>🇵🇹 Welcome to Lisbon! </h1>
+    <h2>Find out the best spots in Lisbon💚</h2>
+    <h4> We currently have <%# @spots.count%> spots to show you!</h4>
+  </div>
+
+  <%= form_tag spots_path, class: 'search-form-control form-group', method: :get do %>
+    <%= text_field_tag :query,
+      params[:query],
+      class: "form-control",
+      placeholder: "Find a spot"%>
+    <%= submit_tag "Search", class: "btn btn-dark" %>
+  <% end %>
+
+  <div class="btn-view-all-spots">
+    <%= link_to "View all spots", spots_path, class:"btn btn-dark"%>
+  </div>
+
+   <div class="btn-create">
+    <%= link_to "Create a new spot", new_spot_path, class: "btn btn-success"%>
+  </div>
+</div>

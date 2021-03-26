@@ -1,7 +1,11 @@
 class SpotsController < ApplicationController
 
   def index
-    @spots = Spot.all
+    if params[:query].present?
+      @spots= Spot.global_search(params[:query])
+    else
+      @spots = Spot.all
+    end
   end
 
   def show
