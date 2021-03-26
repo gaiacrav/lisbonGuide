@@ -1,18 +1,14 @@
-<%= Date.today%>
-<h1>🇵🇹 Welcome to Lisbon! </h1>
 
-<h2>Find out the best spots in Lisbon💚</h2>
-<h4> We currently have <%= @spots.count%> spots to show you!</h4>
+<div class="page">
+  <p id="date"> <%= Date.today%> </p>
+  <div class="header">
+    <h1>🇵🇹 Welcome to Lisbon! </h1>
+    <h2>Find out the best spots in Lisbon💚</h2>
+    <h4> We currently have <%= @spots.count%> spots to show you!</h4>
+  </div>
 
+  <div class="btn-create">
+    <%= link_to "Create a new spot", new_spot_path, class: "btn btn-success"%>
+  </div>
 
-<%= link_to "Create a new spot", new_spot_path, class: "btn btn-success"%>
-
-
-<ul>
-<% @spots.each do |spot|%>
-<li>
-<%= spot.name %>, <%= spot.description %> and rating = <%= spot.rating %>!
-<%= link_to "view", spot_path(spot), class: "btn btn-success"%>
-</li>
-<%end%>
-</ul>
+</div>
