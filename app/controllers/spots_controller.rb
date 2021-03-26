@@ -24,6 +24,14 @@ class SpotsController < ApplicationController
   end
 
   def destroy
+    @spot = Spot.find(params[:id])
+
+    if @spot.destroy
+      redirect_to spots_path(@spot), notice: 'You successfully deleted the spot!'
+    else
+      redirect_to spot_path(@spot), alert: 'Could not delete the spot :('
+    end
+
   end
 
   private
