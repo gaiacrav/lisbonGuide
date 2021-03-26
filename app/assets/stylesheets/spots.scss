@@ -21,6 +21,10 @@
   color: #028090;
 }
 
+.header h4{
+  color: #FB6376;
+}
+
 .btn-create{
   display: flex;
   justify-content: flex-start;
@@ -92,4 +96,16 @@
   border: 1px solid #000080;
   outline: none !important;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+// list index page
+
+.list-spot{
+  list-style-type: none;
+  padding: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.spot-info{
+  width: 600px;
 }

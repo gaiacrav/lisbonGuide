@@ -1,7 +1,15 @@
 <div class="page">
-  <% @spots.each do |spot|%>
-    <ul>
-      <li><%= spot.name %></li>
-    </ul>
-  <%end%>
+  <div class="header">
+    <h1>Lisbon best spots!</h1>
+  </div>
+
+    <% @spots.each do |spot|%>
+      <ul class="list-spot">
+        <div class="spot-info">
+          <li>📍 <%= spot.name %>, <%= spot.description %></li>
+         </div>
+        <%= link_to "Show", spot_path(spot), class: "btn btn-dark" %>
+      </ul>
+    <%end%>
+
 </div>
