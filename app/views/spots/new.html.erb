@@ -3,12 +3,15 @@
     <h1>Which spot would you like to add?</h1>
   </div>
 
-  <div class="new-spot-form">
+
     <%= simple_form_for(@spot) do |f| %>
-        <%= f.input :name, class:"new-spot-form-input"%>
-        <%= f.input :description, class: "new-spot-form-input" %>
-        <%= f.input :photo, as: :file %>
-        <%= f.submit class: 'btn btn-success my-3'%>
+    <div class="new-spot-form">
+       <p class="list-group-item-info"> <%= f.input :name%> </p>
+       <p class="list-group-item-info"> <%= f.input :description, class: "new-spot-form-input" %> </p>
+       <p class="list-group-item-info"> <%= f.input :photo, as: :file %> </p>
+       <div class="btn-new-spot-create">
+        <%= f.submit class: 'btn btn-dark my-3'%>
+       </div>
     <% end %>
   </div>
 

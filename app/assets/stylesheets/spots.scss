@@ -41,6 +41,11 @@
   cursor: pointer;
 }
 
+.btn-new-spot-create{
+  display: flex;
+  justify-content: flex-end;
+}
+
 #date{
   font-weight: lighter;
   color: #FB6376;
