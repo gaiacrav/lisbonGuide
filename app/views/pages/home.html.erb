@@ -3,7 +3,7 @@
   <div class="header">
     <h1>🇵🇹 Welcome to Lisbon! </h1>
     <h2>Find out the best spots in Lisbon💚</h2>
-    <h4> We currently have <%# @spots.count%> spots to show you!</h4>
+    <h4> We currently have <%= @spots.count%> spots to show you!</h4>
   </div>
 
   <%= form_tag spots_path, class: 'search-form-control form-group', method: :get do %>
