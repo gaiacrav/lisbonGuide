@@ -148,3 +148,51 @@
   padding: 10px;
 }
 
+
+// slider
+
+.top-spots-slider{
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.slider {
+  margin-top: 20px;
+  width: 600px;
+  height: 300px;
+  display: flex;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 5px;
+}
+
+.slide {
+  width: 600px;
+  flex-shrink: 0;
+  height: 100%;
+}
+
+
+// cards
+
+.card-category {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+
