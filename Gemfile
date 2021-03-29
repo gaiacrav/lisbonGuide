@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'simple_form'
 gem 'pg_search', '~> 2.3.0'
 gem 'cloudinary', '~> 1.16.0'
+gem 'geocoder'
 
 gem 'dotenv-rails', groups: [:development, :test]
 
