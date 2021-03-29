@@ -10,6 +10,11 @@
     <div class="list-spot-all">
       <% @spots.each do |spot|%>
           <div class="spot-info">
+            <% if spot.photo.attached? %>
+             <%= cl_image_tag spot.photo.key, height: 180, width: 220, crop: :fill, class: "spot-image" %>
+            <% else %>
+             <%= image_tag "MyLisbon.jpg", class: "spot-image" %>
+            <% end %>
             <span id="placeholder">📍</span> <p><%= spot.name %> </p>
             <div class="show-btn-index">
             <%= link_to "Show", spot_path(spot), class: "btn btn-light" %>
