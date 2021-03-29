@@ -14,9 +14,47 @@
  *= require_self
  */
 
+ @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+
  body {
    background-color: #97D2FB;
    color: #182825;
    font-family: 'Rubik', sans-serif;
    font-size: 18px;
+   position: relative;
  }
+
+.footer{
+  width: 400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+ #footer-signature {
+  text-align: center;
+  position: relative;
+  bottom: -100px;
+  font-family: 'Acme', sans-serif;
+  padding: 3px;
+ }
+
+ #footer-signature i{
+  color: #FB6376;
+ }
+
+ #footer-icons{
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: -100px;
+  padding: 3px;
+ }
+
+ #footer-icons i{
+  color: #FB6376;
+  padding-left: 5px;
+ }
+
