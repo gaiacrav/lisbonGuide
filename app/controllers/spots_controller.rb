@@ -17,7 +17,7 @@ class SpotsController < ApplicationController
   end
 
   def create
-    @spot = Spot.new(spot_name)
+    @spot = Spot.new(spot_params)
     @spot.save
 
     if @spot.save
@@ -26,6 +26,18 @@ class SpotsController < ApplicationController
       render :new
     end
   end
+
+  def edit
+    @spot = Spot.find(params[:id])
+  end
+
+  def update
+    @spot = Spot.find(params[:id])
+    @spot.update(spot_params)
+
+    redirect_to spot_path(@spot)
+  end
+
 
   def destroy
     @spot = Spot.find(params[:id])
@@ -40,7 +52,7 @@ class SpotsController < ApplicationController
 
   private
 
-  def spot_name
+  def spot_params
     params.require(:spot).permit(:name, :description, :photo)
   end
 
