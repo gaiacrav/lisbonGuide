@@ -34,7 +34,8 @@
 .btn-delete{
   display: flex;
   justify-content: flex-end;
-  margin-top: 50px;
+  //margin-top: 20px;
+  padding: 20px;
 }
 
 .btn-back{
@@ -71,6 +72,10 @@
 .new-spot-form-input{
   margin: 0 auto;
   margin-top: 50px;
+}
+
+.spot-description{
+  padding: 20px;
 }
 
 //search form

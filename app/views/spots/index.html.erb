@@ -11,7 +11,7 @@
     <% @spots.each do |spot|%>
         <ul class="list-spot">
           <div class="spot-info">
-            <li>📍 <%= spot.name %>, <%= spot.description %></li>
+            <li>📍 <%= spot.name %> </li>
           </div>
         <%= link_to "Show", spot_path(spot), class: "btn btn-dark" %>
         </ul>

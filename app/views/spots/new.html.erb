@@ -7,7 +7,7 @@
     <%= simple_form_for(@spot) do |f| %>
     <div class="new-spot-form">
        <p class="list-group-item-info"> <%= f.input :name%> </p>
-       <p class="list-group-item-info"> <%= f.input :description, class: "new-spot-form-input" %> </p>
+       <p class="list-group-item-info"> <%= f.input :description, as: :text, class: "new-spot-form-input" %> </p>
        <p class="list-group-item-info"> <%= f.input :photo, as: :file %> </p>
        <div class="btn-new-spot-create">
         <%= f.submit class: 'btn btn-dark my-3'%>
