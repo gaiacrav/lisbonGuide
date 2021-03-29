@@ -15,8 +15,6 @@
  */
 
  @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
- @import "font-awesome-sprockets";
- @import "font-awesome";
 
  body {
    background-color: #97D2FB;
