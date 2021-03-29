@@ -7,15 +7,15 @@
     <%= link_to "Create a new spot", new_spot_path, class: "btn btn-success"%>
   </div>
 
-      <div class="list-spot-all">
-    <% @spots.each do |spot|%>
-        <ul class="list-spot">
+    <div class="list-spot-all">
+      <% @spots.each do |spot|%>
           <div class="spot-info">
-            <li>📍 <%= spot.name %> </li>
+            <span id="placeholder">📍</span> <p><%= spot.name %> </p>
+            <div class="show-btn-index">
+            <%= link_to "Show", spot_path(spot), class: "btn btn-light" %>
+            </div>
           </div>
-        <%= link_to "Show", spot_path(spot), class: "btn btn-dark" %>
-        </ul>
-    <%end%>
+      <%end%>
     </div>
 
   <div class="btn-back">
