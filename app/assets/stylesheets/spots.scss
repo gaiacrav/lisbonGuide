@@ -25,6 +25,8 @@
   color: #FB6376;
 }
 
+// btn
+
 .btn-create{
   display: flex;
   justify-content: flex-end;
@@ -32,10 +34,14 @@
 }
 
 .btn-delete{
-  display: flex;
-  justify-content: flex-end;
+  //display: flex;
+  //justify-content: flex-end;
   //margin-top: 20px;
-  padding: 20px;
+  padding: 10px;
+}
+
+.btn-edit{
+  padding: 10px;
 }
 
 .btn-back{
@@ -55,6 +61,11 @@
   display: flex;
   justify-content: flex-end;
   margin-top: 20px;
+}
+
+.btn-show-page{
+  display: flex;
+  justify-content: flex-end;
 }
 
 #date{

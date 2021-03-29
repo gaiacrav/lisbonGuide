@@ -16,13 +16,16 @@
     <p><%= @spot.description%></p>
   </div>
 
-  <div class="btn-edit">
-    <%= link_to "Edit spot", edit_spot_path(@spot), class: "btn btn-success" %>
+  <div class="btn-show-page">
+    <div class="btn-edit">
+      <%= link_to "Edit", edit_spot_path(@spot), class: "btn btn-success" %>
+    </div>
+
+    <div class="btn-delete">
+      <%= link_to "Delete", spot_path(@spot), class: "btn btn-warning", method: :delete, data: { confirm: 'Are you sure?' } %>
+    </div>
   </div>
 
-  <div class="btn-delete">
-    <%= link_to "Delete", spot_path(@spot), class: "btn btn-warning", method: :delete, data: { confirm: 'Are you sure?' } %>
-  </div>
   <div class="btn-back">
     <%= link_to "Back", spots_path, class: "btn btn-dark"%>
   </div>
