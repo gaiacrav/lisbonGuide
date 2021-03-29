@@ -4,6 +4,13 @@
     <h4>Good choice 😏 </h4>
   </div>
 
+    <div class="spot-image">
+      <% if @spot.photo.attached? %>
+        <%= cl_image_tag(@spot.photo.key) %>
+      <% else %>
+        <%= cl_image_tag("lisbon.jpg") %>
+      <% end %>
+    </div>
 
 
   <div class="spot-description">
