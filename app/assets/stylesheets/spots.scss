@@ -118,3 +118,17 @@
 .spot-info{
   width: 600px;
 }
+
+// show page image
+
+.spot-image-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.spot-image{
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+}
