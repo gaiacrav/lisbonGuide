@@ -15,7 +15,7 @@
  */
 
  @import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
- 
+
  body {
    background-color: #97D2FB;
    color: #182825;
@@ -33,7 +33,7 @@
  #footer-signature {
   text-align: center;
   position: relative;
-  bottom: -100px;
+  bottom: -20px;
   font-family: 'Acme', sans-serif;
   padding: 3px;
  }
@@ -47,7 +47,7 @@
   position: relative;
   display: flex;
   justify-content: center;
-  bottom: -100px;
+  bottom: -20px;
   padding: 3px;
  }
 
