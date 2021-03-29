@@ -3,6 +3,10 @@
     <h1>Lisbon best spots!</h1>
   </div>
 
+  <div class="btn-create">
+    <%= link_to "Create a new spot", new_spot_path, class: "btn btn-success"%>
+  </div>
+
       <div class="list-spot-all">
     <% @spots.each do |spot|%>
         <ul class="list-spot">
